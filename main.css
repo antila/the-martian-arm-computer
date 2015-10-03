@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Gridnik';
+  src: url('ufonts.com_gridnik.eot'); /* IE9 Compat Modes */
+  src: url('ufonts.com_gridnik.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('ufonts.com_gridnik.woff') format('woff'), /* Pretty Modern Browsers */
+       url('ufonts.com_gridnik.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+html, body {
+    height: 100%;
+    /*font-family: 'Jura', sans-serif;*/
+    font-weight: bold;
+    font-family: 'Gridnik', sans-serif;
+    /*font-family: 'Share Tech', sans-serif;*/
+    letter-spacing: -0.27vw;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 1.5%;
+    margin-top: 1%;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    color: #9f5c3e;
+    font-size: 2vw;
+    letter-spacing: -0.2vw;
+}
+
+.container {
+    background: #000;
+    width: 100%;
+    border: 0.2vw solid #fff;
+    padding: 4%;
+    border-radius: 0 3vw;
+}
+
+/* Header ------------------------------------------------------------------- */
+.header {
+    border: 0.2vw solid #fff;
+    border-bottom: none;
+    padding: 1% 3%;
+    clear: both;
+    overflow: hidden;
+}
+.header p {
+    float: left;
+    font-size: 4vw;
+    line-height: 3vw;
+}
+.header p:last-child {
+    float: right;
+}
+
+ /* Sensors ----------------------------------------------------------------- */
+.sensors {
+    overflow: hidden;
+}
+
+.sensor {
+    font-size: 2vw;
+    padding: 2.8%;
+    float: left;
+    width: 25%;
+    height: 18vw;
+    background: #1e292e;
+    margin: 0;
+    border: 0.2vw solid #fff;
+    border-right: none;
+}
+
+.sensor:last-child {
+    border: 0.2vw solid #fff;
+}
+
+.sensor .footer span {
+    font-size: 2vw;
+    letter-spacing: 0.5vw;
+    float: right;
+}
+
+.sensor .footer span:last-child {
+    opacity: 0.5;
+}
+
+.graph {
+    position: relative;
+    font-size: 4vw;
+    height: 3.5vw;
+    letter-spacing: -0.08em;
+    line-height: 3vw;
+}
+
+.sensor .graph span {
+    letter-spacing: -0.3em;
+}
+
+.sensor .graph span:nth-child(2) {
+    color: #9f5c3e;
+}
+
+.sensor .graph span:last-child {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 50%;
+    color: #9f5c3e;
+    margin-top: -1vw;
+}
+
+.value,
+.feed p {
+    font-size: 4vw;
+    padding: 1% 0 0 9%;
+}
+
+.value {
+    padding: 0;
+    text-align: center;
+}
+.unit {
+    display: inline-block;
+    font-size: 2vw;
+    line-height: 6vw;
+    padding-left: 0.5vw;
+    position: absolute;
+}
+
+/* Feed --------------------------------------------------------------------- */
+.feed {
+    border: 0.2vw solid #fff;
+    border-right: none;
+    border-top: none;
+    height: 16vw;
+    width: 75%;
+    float: left;
+    padding: 1% 0 0 3%;
+}
+
+.feed span {
+    margin: 0 3vw 0 1vw;
+    color: #9f5c3e;
+}
+.feed span:last-child {
+    margin-right: 0;
+}
+.feed header {
+    display: inline-block;
+}
+
+.feed .ip {
+    float: right;
+    letter-spacing: normal;
+    margin-right: 1em;
+}
+
+/* Crew buttons ------------------------------------------------------------- */
+.crew {
+    margin-left: 7%;
+    margin-top: 3%;
+    margin-right: 5%;
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 1%;
+    padding-bottom: 0.5%;
+    width: 12%;
+    font-size: 0.9em;
+    letter-spacing: -0.1vw;
+}
+
+.crew span {
+    display: inline-block;
+    height: 3.3vh;
+    width: 3.3vh;
+    background: #000;
+    margin-right: 1vh;
+}
+
+/* Helmet ------------------------------------------------------------------- */
+.helmet {
+    font-size: 2vw;
+    float: left;
+    border: 0.2vw solid #fff;
+    border-top: none;
+    height: 16vw;
+    width: 25%;
+    padding: 2vw 3vw;
+}
+
+.helmet .graph {
+    height: 9vw;
+}
+
+.helmet .graph span:nth-child(1),
+.helmet .graph span:nth-child(2) {
+    position: absolute;
+    margin-top: -1vw;
+    top: 37%;
+}
+
+.helmet .graph span:nth-child(1) {
+    left: 15%;
+}
+
+.helmet .graph span:nth-child(2) {
+    right: 15%;
+}
+
+.helmet .graph span:nth-child(3),
+.helmet .graph span:nth-child(4) {
+    position: absolute;
+    display: block;
+    border: 0.2vw solid #fff;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 8vw;
+    left: 25%;
+    top: 0;
+    opacity: 0.3;
+}
+
+.helmet .graph span:nth-child(4) {
+    transform: rotate(-25deg);
+    border-color: #9f5c3e;
+    border-width: 0.3vw;
+    border-left: 0;
+    border-bottom: 0;
+    border-top: 0;
+    opacity: 1;
+}
+
+.helmet span {
+    float: right;
+}
